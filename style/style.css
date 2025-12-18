@@ -1,3 +1,43 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
+
+body {
+    background: #0b1a27 url('../images/backiee-265661-landscape.jpg') no-repeat center center fixed;
+}
+
+header {
+    background-color: rgba(122, 145, 162, 0.8);
+    padding: none;
+    margin: none;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#inicio {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    border-radius: 15px;
+    border: none;   
+}
+
+
