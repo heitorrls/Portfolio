@@ -1,23 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 body {
-    background: #0b1a27 url('../images/backiee-265661-landscape.jpg') no-repeat center center fixed;
+    background: #0b1a27 url('../images/e54008fec896ec085da559cf537d6f32.gif') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100;
+    filter: contrast(110%) brightness(95%) saturate(120%); /*pra melhorar a qualidade do background */
+    image-rendering: optimizeQuality;
 }
 
-header {
+
+.first-section header {
     background-color: rgba(122, 145, 162, 0.8);
-    padding: none;
+    padding: 10px  10px;
     margin: none;
     display: flex;  
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px;
-    margin: 10px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
+    background: none;
+    backdrop-filter: none;
     border-radius: 15px;
 }
 
@@ -32,12 +39,101 @@ nav ul li a {
     font-weight: bold;
 }
 
-#inicio {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 30px;
-    border-radius: 15px;
-    border: none;   
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
 }
 
+/* css da animação de digitação no Desenvolvendo Soluções tecnológicas */
+.cursor {
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+
+}
+.cursor code {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 30px;
+    color: #fff;
+}
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+/* fim da animação de Desenvolvendo soluções tecnológicas */
+
+
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: none;
+    padding: 0px;
+    margin: 80px;
+    border-radius: 15px;
+    font-size: 30px;
+}
+#left h1 {
+    color: #ffffffa9;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+#left h3 {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+#left p {
+    font-size: 25px;
+    color: #ffffffa9;
+}
+
+#sobre h2{
+    justify-content: flex-start;
+    display: flex;
+    font-size: 40px;
+    margin-top: 40px;
+}
+#sobre {
+    padding: 90px;
+    margin: 0;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    display: flex;
+    min-height: 400px;
+    font-size: 20px;
+    flex-direction: row;
+    gap: 50px;
+    /* background-color: #fff; */
+}
+.sbr-img {
+    height: auto;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.sobre-mim {
+    max-width: 800px;
+    text-align: left;
+}
 
