@@ -15,11 +15,11 @@ body {
     image-rendering: optimizeQuality;
 }
 
+
+
 .first-section header {
     background-color: rgba(122, 145, 162, 0.8);
-    padding: 10px  10px;
-    margin: none;
-    display: flex;  
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background: none;
@@ -123,6 +123,7 @@ nav ul li a:hover {
   to { border-right-color: transparent; }
 }
 /* fim da animação de Desenvolvendo soluções tecnológicas */
+
 .inicio {
     /* background-color: #fff; */
     margin: 0;
@@ -143,7 +144,6 @@ nav ul li a:hover {
 
 #left h1 {
     color: #ffffffa9;
-    
     /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); */
 }
 
@@ -244,8 +244,8 @@ nav ul li a:hover {
 #projetos {
     padding: 90px;
     backdrop-filter: blur(10px);
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     display: flex;
     min-height: 550px;
     font-size: 20px;
@@ -253,15 +253,56 @@ nav ul li a:hover {
     gap: 50px;
     /* background-color: #fff;    */
 }
+
+#projetos h2 {
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+#projetos img {
+    width: 600px;
+    height: 300px;
+    border-radius: 15px;
+    /* border: 2px solid white; */
+    margin-left: 500px;
+
+}
+
 #experiencia {
     padding: 90px;
     backdrop-filter: blur(10px);
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     display: flex;
     min-height: 550px;
     font-size: 20px;
     flex-direction: column;
     gap: 50px;
-    /* background-color: #fff;    */
+    text-align: end;
+     /* background-color: #fff;    */
+}
+
+#experiencia h2 {
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+#experiencia h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#experiencia ul {
+    /* list-style-type: disc; */
+    margin-left: 20px;
 }
